@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/bparmley/small-game#readme",
   "dependencies": {
+    "bson": "^0.4.21",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "kerberos": "^0.0.18",
+    "mongodb": "^2.1.4",
+    "mongodb-core": "^1.2.32"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

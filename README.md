@@ -25,6 +25,10 @@ Due to a bug working with new versions of gulp-jshint you will need to globally 
 npm install -g jshint
 ```
 
+### node-gyp
+
+This one is a bit complex. Check out the [node-gyp documentation](https://www.npmjs.com/package/node-gyp) for installation and follow your operation system's instructions to the letter. **_Read ALL installation instructions before proceeding_**
+
 ### App specific modules
 
 Navigate in your command line to the folder that the application is in and enter
@@ -32,6 +36,18 @@ Navigate in your command line to the folder that the application is in and enter
 ```
 npm install
 bower install
+```
+
+## MongoDB
+Visit [https://www.mongodb.org/](https://www.mongodb.org/) to download and install MongoDB. Follow their quick start guide for your operating system to set up MongoDB on your machine.
+
+Running the Database
+--------------------
+
+Open a new comand line window and launch MongoDB by running
+
+```
+mongod
 ```
 
 Running the Server
@@ -43,7 +59,15 @@ When all dependencies are installed, in your command line from the application's
 gulp serve
 ```
 
-Navigate in your internet browser to 
+seed the database by navigating in your internet browser to 
+
+```
+localhost:3000/admin/addJobs
+```
+
+pull up your gulp command line window and type `rs` to restart the server
+
+Navigate in your browser to the app at
 
 ```
 localhost:3000

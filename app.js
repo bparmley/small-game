@@ -8,16 +8,19 @@ var topnav = [
     {
         link: '/jobs',
         text: 'Jobs'
-                }, {
+    },
+    {
         link: '/inventory',
         text: 'Inventory'
-                }, {
+    },
+    {
         link: '/store',
         text: 'Store'
-                }
-            ];
+    }
+];
 
-var jobsRouter = require('./src/routes/jobsRoute.js')(topnav);
+var jobsRouter = require('./src/routes/jobsRoutes')(topnav);
+var adminRouter = require('./src/routes/adminRoutes')(topnav);
 
 var inventoryRouter = express.Router();
 var storeRouter = express.Router();
@@ -29,21 +32,12 @@ app.set('view engine', 'ejs');
 
 app.use('/jobs', jobsRouter);
 
+app.use('/admin', adminRouter);
+
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'Simple Game',
-        topnav: [
-            {
-                link: '/jobs',
-                text: 'Jobs'
-            }, {
-                link: '/inventory',
-                text: 'Inventory'
-            }, {
-                link: '/store',
-                text: 'Store'
-            }
-        ]
+        topnav: topnav
     });
 });
 

@@ -76,7 +76,8 @@
                         </div>
                         <div class="col-xs-8 col-sm-10">
                             <h3><%=job.jobName%></h3>
-                            <p><%=job.jobType%></p>
+                            <p>Job Type: <%=job.jobType%></p>
+                            <p>Description: <%=job.description%></p>
                             <%if(job.hardJob){%>
                                 <p class="text-warning"><i class="fa fa-exclamation-triangle"></i> <em>It is recommended that you get some good gear before attempting this job.</em></p>
                             <%}%>
