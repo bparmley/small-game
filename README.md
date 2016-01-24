@@ -14,29 +14,39 @@ Visit [https://nodejs.org](https://nodejs.org) to download and install the lates
 ### Bower
 Open the command line and enter the following code to install bower globally (requires Node.js installation)
 
-```npm install -g bower```
+```
+npm install -g bower
+```
 
 ### JSHint
 Due to a bug working with new versions of gulp-jshint you will need to globally install jshint. In your command line run
 
-```npm install -g jshint```
+```
+npm install -g jshint
+```
 
 ### App specific modules
 
 Navigate in your command line to the folder that the application is in and enter
 
-```npm install
-bower install```
+```
+npm install
+bower install
+```
 
 Running the Server
 ------------------
 
 When all dependencies are installed, in your command line from the application's directory run
 
-```gulp serve```
+```
+gulp serve
+```
 
 Navigate in your internet browser to 
 
-```localhost:3000```
+```
+localhost:3000
+```
 
-##*This application is still in development*
+*This application is still in development*
