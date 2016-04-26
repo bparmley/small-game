@@ -3,7 +3,7 @@ var app = angular.module('app', ['ngRoute', 'firebase']);
 app.config(function($routeProvider){
     $routeProvider
     .when('/character', {
-        template: '<character></character>'
+        template: '<character></character>',
     })
     .when('/store', {
         template: '<store></store>'

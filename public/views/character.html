@@ -2,14 +2,14 @@
 <h1 class="col-xs-12">Adventurer</h1>
 <div class="col-xs-12 col-sm-6">
     <h2>Character Info</h2>
-    <p>Name: {{userInfo.name}}</p>
-    <p>Gold: {{userInfo.gold}}</p>
-    <p>You are capable of handling jobs with a difficulty of level&nbsp;{{userInfo.ilevel}}</p>
+    <p>Name: {{$ctrl.data.userInfo.name}}</p>
+    <p>Gold: {{$ctrl.data.userInfo.gold}}</p>
+    <p>You are capable of handling jobs with a difficulty of level&nbsp;{{$ctrl.data.userInfo.ilevel}}</p>
 </div>
 <div class="col-xs-12 col-sm-6">
     <h2>Inventory</h2>
     <div class="section">
-        <div class="row" ng-repeat="item in items | filter:{inventory:true}">
+        <div class="row" ng-repeat="item in $ctrl.data.items | filter:{inventory:true}">
             <h2>{{item.name}}</h2>
             <div class="col-xs-12 col-sm-8">
                 <p>{{item.description}}</p>

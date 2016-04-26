@@ -25,5 +25,27 @@
 		"name": "Gerald The Great",
 		"gold": "0",
 		"ilevel": 2
-	}
+	},
+    "jobs":[
+        {
+            "name": "Picking Up Trash",
+            "level": 1,
+            "pay": 15
+        },
+        {
+            "name": "Entertaining Kids",
+            "level": 2,
+            "pay": 50
+        },
+        {
+            "name": "Guarding the Shed",
+            "level": 6,
+            "pay": 80
+        },
+        {
+            "name": "Killing Trolls",
+            "level": 11,
+            "pay": 150
+        }
+    ]
 }
