@@ -1,51 +1,55 @@
 {
-	"items": [{
-		"name": "Hammer",
-		"description": "It is a squeaky inflatable hammer",
-		"cost": 40,
-		"level": 1,
-		"buyback": 2,
-		"inventory": true
-	}, {
-		"name": "Sword",
-		"description": "It is a small sharp sword",
-		"cost": 150,
-		"level": 6,
-		"buyback": 25,
-		"inventory": false
-	}, {
-		"name": "Helmet",
-		"description": "It is a good helmet",
-		"cost": 140,
-		"level": 5,
-		"buyback": 22,
-		"inventory": false
-	}],
-	"userInfo": {
-		"name": "Gerald The Great",
-		"gold": "0",
-		"ilevel": 2
-	},
-    "jobs":[
-        {
-            "name": "Picking Up Trash",
-            "level": 1,
-            "pay": 15
-        },
-        {
-            "name": "Entertaining Kids",
-            "level": 2,
-            "pay": 50
-        },
-        {
-            "name": "Guarding the Shed",
-            "level": 6,
-            "pay": 80
-        },
-        {
-            "name": "Killing Trolls",
-            "level": 11,
-            "pay": 150
-        }
-    ]
+  "items" : {
+    "aaaa" : {
+      "buyback" : 2,
+      "cost" : 40,
+      "description" : "It is a squeaky inflatable hammer",
+      "inventory" : false,
+      "level" : 1,
+      "name" : "Hammer"
+    },
+    "bbbb" : {
+      "buyback" : 25,
+      "cost" : 150,
+      "description" : "It is a small sharp sword",
+      "inventory" : false,
+      "level" : 6,
+      "name" : "Sword"
+    },
+    "cccc" : {
+      "buyback" : 22,
+      "cost" : 140,
+      "description" : "It is a good helmet",
+      "inventory" : false,
+      "level" : 5,
+      "name" : "Helmet"
+    }
+  },
+  "jobs" : {
+    "aaaa" : {
+      "level" : 1,
+      "name" : "Picking Up Trash",
+      "pay" : 15
+    },
+    "bbbb" : {
+      "level" : 2,
+      "name" : "Entertaining Kids",
+      "pay" : 50
+    },
+    "cccc" : {
+      "level" : 6,
+      "name" : "Guarding the Shed",
+      "pay" : 80
+    },
+    "dddd" : {
+      "level" : 11,
+      "name" : "Killing Trolls",
+      "pay" : 150
+    }
+  },
+  "userInfo" : {
+    "gold" : 0,
+    "ilevel" : 1,
+    "name" : "Gerald The Great"
+  }
 }

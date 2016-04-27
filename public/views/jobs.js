@@ -1,8 +1,11 @@
 angular.module('app').component('jobs', {
    templateUrl: '/views/jobs.html',
-    controller: function(rootRef, $firebaseObject) {
-        this.data = $firebaseObject(rootRef);
-        
-        console.log($firebaseObject(rootRef));
+    controller: function(fbRef, $firebaseObject, $firebaseArray) {
+        this.jobs = $firebaseArray(fbRef.getJobsRef().orderByChild("level"));
+        this.userInfo = $firebaseObject(fbRef.getUserInfoRef());
+        this.takeJob = function(job){
+            this.userInfo.gold += job.pay;
+            this.userInfo.$save();
+        };
     }
 })

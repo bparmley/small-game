@@ -6,6 +6,9 @@ angular.module('app').factory('fbRef', function(rootRef){
         },
         getUserInfoRef: function(){
             return rootRef.child('userInfo');
+        },
+        getJobsRef: function(){
+            return rootRef.child('jobs');
         }
     }
 })

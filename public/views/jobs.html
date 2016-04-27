@@ -1,11 +1,13 @@
 <nav style="min-height:50px"></nav>
-<h1 class="col-xs-12">Jobs</h1>
+<h1 class="col-xs-12">Jobs <small>Your item level is {{$ctrl.userInfo.ilevel}} You have {{$ctrl.userInfo.gold | currency}}</small></h1>
 
 <div class="col-xs-12">
-    <div class="well" ng-repeat="job in $ctrl.data.jobs">
+    <div class="well" ng-repeat="job in $ctrl.jobs">
         <h2>{{job.name}}</h2>
-        <p>Reward: {{job.pay}}</p>
-        <p><button class="btn btn-success pull-right">Take Job</button></p>
+        <p>Reward: {{job.pay | currency}}</p>
+        <p>Dificulty: {{job.level}}</p>
+        <p><button ng-if="$ctrl.userInfo.ilevel >= job.level" class="btn btn-success pull-right" ng-click="$ctrl.takeJob(job)">Take Job</button>
+        <button ng-if="$ctrl.userInfo.ilevel < job.level" class="btn disabled pull-right">Requires Item Level {{job.level}}</button></p>
         <div class="clearfix"></div>
     </div>
 </div>
