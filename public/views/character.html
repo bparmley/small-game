@@ -9,7 +9,7 @@
 <div class="col-xs-12 col-sm-6">
     <h2>Inventory</h2>
     <div class="section">
-        <div class="row" ng-repeat="item in $ctrl.items | filter:{inventory:true}">
+        <div class="row" ng-repeat="item in filteredItems = ($ctrl.items | filter:{inventory:true})">
             <div class="well">
                 <h2>{{item.name}}</h2>
                 <div class="col-xs-12 col-sm-8">
@@ -22,5 +22,7 @@
                 <div class="clearfix"></div>
             </div>
         </div>
+            <h2 ng-if="filteredItems.length == 0">You have nothing in your inventory.</h2>
+
     </div>
 </div>
